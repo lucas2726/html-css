@@ -60,7 +60,7 @@ img {
 
 /* CSS Grip */
 
-.grid {
+.grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 800px;
@@ -69,14 +69,14 @@ img {
     grid-gap: 20px;
 }
 
-.grid > div:nth-child(n + 4) {
+.grid1 > div:nth-child(n + 4) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     align-items: center;
 }
 
-.grid > div.anuncio {
+.grid1 > div.anuncio {
     grid-column: 1 ;
     grid-row: 2 / 5;
     border-top: 10px solid black;
@@ -84,17 +84,23 @@ img {
 }
 
 @media (max-width: 600px) {
-    .grid {
+    .grid1 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .grid > div:nth-child(n + 4) {
+    .grid1 > div:nth-child(n + 4) {
         display: block;
     }
 
-    .grid > div.anuncio {
+    .grid1 > div.anuncio {
         grid-column: auto;
         grid-row: auto;
         order: -1;
     }
+}
+
+/* CSS Grid2 */
+
+.grid2 {
+    display: grid;
 }
