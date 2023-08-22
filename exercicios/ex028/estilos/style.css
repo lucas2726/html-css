@@ -32,9 +32,11 @@ flex-wrap: wrap;
 h1 {
     text-align: center;
     margin: 20px ;
+    font-size: 1.25em;
     font-weight: normal;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
